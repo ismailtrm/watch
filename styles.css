@@ -64,6 +64,10 @@ button:hover {
     margin-top: 20px;
 }
 
+#extra-time {
+    margin-top: 20px;
+}
+
 @media (max-width: 600px) {
     h1 {
         font-size: 1.5em;
@@ -72,5 +76,9 @@ button:hover {
     button {
         padding: 10px;
         font-size: 0.9em;
+    }
+
+    #digital-clock, #classic-clock, #digital-exam-clock {
+        font-size: 1.5em;
     }
 }
