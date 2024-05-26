@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saat Sitesi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Saat Sitesi</h1>
+
+        <!-- Branş Modu -->
+        <div id="branch-mode">
+            <h2>Branş Modu</h2>
+            <div id="digital-clock">00:00:00</div>
+            <button id="start-button">Başlat</button>
+            <button id="lap-button">Tur</button>
+            <button id="reset-button">Sıfırla</button>
+            <div id="laps">
+                <h3>Turlar</h3>
+                <ul id="lap-times"></ul>
+            </div>
+            <div id="lap-summary">
+                <p>En İyi Tur: <span id="best-lap">00:00:00</span></p>
+                <p>En Kötü Tur: <span id="worst-lap">00:00:00</span></p>
+                <p>Ortalama Tur Süresi: <span id="average-lap">00:00:00</span></p>
+            </div>
+        </div>
+
+        <!-- Sınav Modu -->
+        <div id="exam-mode">
+            <h2>Sınav Modu</h2>
+            <select id="exam-type">
+                <option value="tyt">TYT (165 dk)</option>
+                <option value="ayt">AYT (180 dk)</option>
+            </select>
+            <div id="classic-clock">10:15</div>
+            <div id="digital-exam-clock">00:00:00</div>
+            <button id="start-exam-button">Başlat</button>
+            <div id="extra-time">
+                <p>Fazla Kullanılan Süre: <span id="extra-time-used">00:00</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
