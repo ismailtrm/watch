@@ -24,10 +24,16 @@ document.addEventListener('DOMContentLoaded', function() {
     function startTimer() {
         startTime = new Date();
         interval = setInterval(updateClock, 1000);
+        startButton.disabled = true;
+        lapButton.disabled = false;
+        resetButton.disabled = false;
     }
 
     function stopTimer() {
         clearInterval(interval);
+        startButton.disabled = false;
+        lapButton.disabled = true;
+        resetButton.disabled = true;
     }
 
     function resetTimer() {
@@ -125,5 +131,3 @@ document.addEventListener('DOMContentLoaded', function() {
     // Sayfa yüklendiğinde klasik saat başlatılır
     initializeClassicClock();
 });
-```
-
